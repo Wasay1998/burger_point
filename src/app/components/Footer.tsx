@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -14,19 +15,27 @@ export default function Footer() {
 
 <div className='flex justify-center space-x-5 transition-transform duration-500 ease-in-out transform hover:scale-105'>
 <a href='https://facebook.com' target='blank' rel='nofollow noopener'>
-<img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" alt="facebook logo" />
+<Image src="https://img.icons8.com/fluent/30/000000/facebook-new.png" alt="facebook logo"
+width={50}
+height={50} />
 </a>
 
 <a href='https://linkedin.com' target='blank' rel='nofollow noopener'>
-<img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" alt="linkedin logo" />
+<Image src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" alt="linkedin logo"
+width={50}
+height={50} />
 </a>
 
 <a href='https://instagram.com' target='blank' rel='nofollow noopener'>
-<img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" alt="instagram logo" />
+<Image src="https://img.icons8.com/fluent/30/000000/instagram-new.png" alt="instagram logo"
+width={50}
+height={50} />
 </a>
 
 <a href='https://twitter.com' target='blank' rel='nofollow noopener'>
-<img src="https://img.icons8.com/fluent/30/000000/twitter.png" alt="twitter logo" />
+<Image src="https://img.icons8.com/fluent/30/000000/twitter.png" alt="twitter logo"
+width={50}
+height={50} />
 </a>
 
 </div>

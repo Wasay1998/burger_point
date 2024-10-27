@@ -1,13 +1,15 @@
 import React from "react";
+import Image from 'next/image'
 
 export default function Banner() {
   return (
     <div className="relative overflow-hidden bg-gradient-to-r from-black to-grey-700 font-sans px-6 py-12 mb-7">
       <div className="absolute inset-0 opacity-20">
-        <img
+        <Image
           src="https://img.freepik.com/free-photo/exploding-burger-with-vegetables-melted-cheese-black-background-generative-ai_157027-1734.jpg?w=740&t=st=1728948444~exp=1728949044~hmac=a2aa4d8e900ed648e13cbb65ce45baca5495dd5b60ae791ed4ce81fd7fcbb07d"
           alt="Delicious Burger Banner"
-          className="w-full h-full object-cover"
+          fill={true}
+          className="object-cover"
         />
       </div>
 

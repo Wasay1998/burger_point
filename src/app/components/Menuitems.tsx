@@ -1,5 +1,6 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
+import Image from 'next/image'
 
 const ProductCardGrid = () => {
   const productImages = [
@@ -37,8 +38,10 @@ const ProductCardGrid = () => {
             className="w-70 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl z-10 relative"
           >
             <a href="#">
-              <img
+              <Image
                 src={productImages[index]}
+                width={208}
+                height={100}
                 alt={`product ${index + 1}`}
                 className="h-80 w-72 object-cover rounded-t-xl"
               />

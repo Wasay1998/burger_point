@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 const products = [
   {
@@ -74,9 +75,11 @@ export default function ProductList() {
                 opacity: 0.2,
               }}
             ></div>
-            <img
+            <Image
               className="relative w-52"
               src={product.imageUrl}
+              width={208}
+              height={100}
               alt={product.title}
             />
 
